@@ -167,7 +167,7 @@ export default function ProductDetail({ params }: ProductDetailProps) {
                 className="relative w-full h-96 bg-gray-200 rounded-lg overflow-hidden mb-8 cursor-zoom-in"
                 onClick={() => openLightbox(product.image)}
               >
-                <Image 
+                <Image
                   src={product.image}
                   alt={product.name}
                   fill
@@ -185,7 +185,7 @@ export default function ProductDetail({ params }: ProductDetailProps) {
                     className="relative w-full h-24 bg-gray-200 rounded-lg overflow-hidden cursor-zoom-in hover:shadow-md transition-shadow"
                     onClick={() => openLightbox(img)}
                   >
-                    <Image 
+                    <Image
                       src={img}
                       alt={`${product.name} - ${index + 1}`}
                       fill
@@ -236,11 +236,11 @@ export default function ProductDetail({ params }: ProductDetailProps) {
                   <li><strong>Category:</strong> {product.category}</li>
                   <li><strong>Style:</strong> {product.style}</li>
                   <li><strong>Material:</strong> {product.material}</li>
-                  <li><strong>Dimensions:</strong> {product.dimensions}</li>
-                  <li><strong>Available Colors:</strong> {product.colors.join(', ')}</li>
+                  {product.dimensions && <li><strong>Dimensions:</strong> {product.dimensions}</li>}
+                  {product.colors && <li><strong>Available Colors:</strong> {product.colors.join(', ')}</li>}
                 </ul>
               </motion.div>
-              
+
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
