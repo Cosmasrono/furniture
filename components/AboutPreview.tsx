@@ -32,21 +32,26 @@ export default function AboutPreview() {
                     transition={{ duration: 0.8 }}
                     className="space-y-6"
                 >
-                    <div>
-                        <span className="text-sm font-semibold text-gray-400 uppercase tracking-widest">About Us</span>
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
-                            Crafting Excellence Since 2010
+    <div>
+                        <motion.span 
+                            className="text-sm font-bold text-amber-700 uppercase tracking-widest"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                        >
+                            🇰🇪 Our Legacy
+                        </motion.span>
+                        <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mt-4 mb-6 tracking-tight">
+                            Preserving Tradition, Creating Tomorrow
                         </h2>
                     </div>
 
-                    <div className="space-y-5 text-gray-600 text-lg leading-relaxed">
-                        <p>
-                            Nenyon Furnitures is born from a passion for exquisite design and the rich heritage of Kenyan craftsmanship.
-                            We believe in creating pieces that are not just furniture, but works of art that enhance your living space.
+                    <div className="space-y-6 text-gray-700 text-lg leading-relaxed font-light">
+                        <p className="text-xl">
+                            Nenyon celebrates Kenya's artistic heritage through contemporary furniture design. We blend centuries of traditional craftsmanship—from Makonde carving to Kikoi weaving—with modern aesthetics to create timeless pieces.
                         </p>
                         <p>
-                            Our commitment to sustainability means sourcing local, high-quality materials and employing skilled artisans
-                            who bring unique vision to every creation.
+                            Every item is handcrafted by master artisans using sustainably sourced local woods like acacia and mango. We believe in honoring Kenya's cultural richness while meeting the demands of modern living.
                         </p>
                     </div>
 

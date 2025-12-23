@@ -3,6 +3,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import FeaturedProducts from "@/components/FeaturedProducts";
+import CategoryShowcase from "@/components/CategoryShowcase";
 import AboutPreview from "@/components/AboutPreview";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
       <Header />
       <Hero />
       <FeaturedProducts inquireViaWhatsApp={inquireViaWhatsApp} />
+      <CategoryShowcase />
       <AboutPreview />
       <Testimonials />
       <Footer />
